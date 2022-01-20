@@ -1,3 +1,4 @@
+# for more details at https://www.gitpod.io/docs/references/gitpod-yml
 tasks:
   - init: npm install
     command: |
@@ -12,3 +13,9 @@ vscode:
   extensions:
     - dbaeumer.vscode-eslint
     - svelte.svelte-vscode
+
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
